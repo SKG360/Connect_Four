@@ -1,3 +1,3 @@
 class ConnectFour
-
-end 
+#this will likely be the master file
+end
