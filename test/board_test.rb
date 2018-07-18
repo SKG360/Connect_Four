@@ -8,8 +8,14 @@ class BoardTest < Minitest::Test
     bc4 = Board.new
     assert bc4
   end
+
   def test_if_the_board_prints_on_one_line
     bc4 = Board.new
-    assert "ABCDEFG..........................................", bc4.board
+    assert "A B C D E F G..........................................", bc4.board
+  end
+  def test_it_breaks_string_into_rows
+    skip
+    bc4 = Board.new
+    assert "......", bc4.divide_string
   end
 end
