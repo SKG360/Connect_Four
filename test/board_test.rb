@@ -4,6 +4,7 @@ require 'pry'
 require './lib/board_three'
 
 class BoardTest < Minitest::Test
+  
   def test_if_it_exits
     bc4 = Board.new
     assert bc4
