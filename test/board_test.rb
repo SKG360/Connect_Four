@@ -9,13 +9,25 @@ class BoardTest < Minitest::Test
     assert bc4
   end
 
-  def test_if_the_board_prints_on_one_line
+  # def test_if_the_board_prints_on_one_line
+  #   bc4 = Board.new
+  #   assert "A B C D E F G..........................................", bc4.board
+  # end
+  #
+  def test_if_top_row_prints
     bc4 = Board.new
-    assert "A B C D E F G..........................................", bc4.board
+
+    assert ["A ", "B ", "C ", "D ", "E ", "F ", "G"], bc4.board[0]
   end
-  def test_it_breaks_string_into_rows
-    skip
+
+  def test_if_the_empty_rows_print
     bc4 = Board.new
-    assert "......", bc4.divide_string
+
+    assert [".", ".", ".", ".", ".", ".", "."], bc4.board[1]
+    assert [".", ".", ".", ".", ".", ".", "."], bc4.board[2]
+    assert [".", ".", ".", ".", ".", ".", "."], bc4.board[3]
+    assert [".", ".", ".", ".", ".", ".", "."], bc4.board[4]
+    assert [".", ".", ".", ".", ".", ".", "."], bc4.board[5]
+    assert [".", ".", ".", ".", ".", ".", "."], bc4.board[6]
   end
 end
