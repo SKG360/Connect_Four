@@ -8,4 +8,6 @@ class ConnectFourTest < Minitest::Test
     game = Connect4.new
     assert game
   end
+
+  
 end

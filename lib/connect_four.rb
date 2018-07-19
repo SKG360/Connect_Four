@@ -7,4 +7,4 @@ class ConnectFour
 end
 
 message = Message.new
-message.welcome
+message.welcome_message 
