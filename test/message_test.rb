@@ -9,4 +9,10 @@ class MessageTest < Minitest::Test
 
     assert message
   end
+
+  def test_if_it_accepts_user_input
+    message = Message.new
+
+    assert message
+  end
 end
